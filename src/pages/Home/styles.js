@@ -14,6 +14,15 @@ export const ProductList = styled.ul`
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
+    width: calc(33.33% - 20px);
+
+    @media (max-width: 950px) {
+      width: calc(50% - 20px);
+    }
+
+    @media (max-width: 650px) {
+      width: calc(100% - 20px);
+    }
 
     img {
       align-self: center;
