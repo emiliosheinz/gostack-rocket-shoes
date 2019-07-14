@@ -3,6 +3,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 
 import api from '../../services/api'
 
+import { formatPrice } from '../../util/format'
+
 import {
   Container,
   AvailableItems,
@@ -24,12 +26,12 @@ export default class Home extends Component {
   async componentDidMount() {
     const response = await api.get('products')
 
-    this.setState({ products: response.data })
+    const products = response.data.map(product => ({
+      ...product,
+      priceFormatted: formatPrice(product.price),
+    }))
 
-    // const products = response.data.map(product => ({
-    //   ...product,
-    //   priceFormatted: formatPrice(product.price),
-    // }))
+    this.setState({ products })
   }
 
   render() {
@@ -50,7 +52,7 @@ export default class Home extends Component {
                 }}
               />
               <ItemTitle>{item.title}</ItemTitle>
-              <ItemPrice>{item.price}</ItemPrice>
+              <ItemPrice>{item.priceFormatted}</ItemPrice>
               <AddToCartButton>
                 <CartIconContainer>
                   <Icon name='add-shopping-cart' size={20} color='#fff' />

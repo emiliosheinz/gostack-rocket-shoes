@@ -24,7 +24,9 @@ export const ItemImage = styled.Image`
   align-self: center;
 `
 
-export const ItemTitle = styled.Text`
+export const ItemTitle = styled.Text.attrs({
+  numberOfLines: 2,
+})`
   font-size: 16px;
   color: #333;
 `
@@ -33,7 +35,8 @@ export const ItemPrice = styled.Text`
   font-size: 21px;
   font-weight: bold;
   color: #000;
-  margin: 5px 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
 `
 
 export const AddToCartButton = styled.TouchableOpacity`
@@ -42,6 +45,7 @@ export const AddToCartButton = styled.TouchableOpacity`
   background-color: #7159c1;
   height: 42px;
   border-radius: 5px;
+  margin-top: auto;
 `
 
 export const ButtonText = styled.Text`
