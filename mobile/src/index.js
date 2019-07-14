@@ -3,7 +3,7 @@ import { StatusBar } from 'react-native'
 
 import Routes from './routes'
 
-// import './config/ReactotronConfig'
+import './config/ReactotronConfig'
 
 const App = () => {
   return (
