@@ -15,7 +15,6 @@ function* addToCart({ id }) {
   const amount = currentAmount + 1
 
   if (amount > stockAmount) {
-    // alert('Quantidade solicitada fora do estoque.')
     return
   }
 
