@@ -45,7 +45,9 @@ export const FinishButtonText = styled.Text`
   font-size: 14px;
 `
 
-export const CartItemsList = styled.FlatList.attrs({})``
+export const CartItemsList = styled.FlatList.attrs({
+  showsVerticalScrollIndicator: false,
+})``
 
 export const CartItem = styled.View``
 

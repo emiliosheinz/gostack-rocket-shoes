@@ -7,5 +7,5 @@ export const CartSize = styled.Text`
   padding: 0 5px;
   border-radius: 10px;
   top: -10;
-  left: -10;
+  right: 0;
 `
