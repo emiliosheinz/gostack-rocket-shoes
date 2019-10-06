@@ -25,6 +25,7 @@ Repository to learn more about redux. It is a little e-commerce of shoes that us
 - Run `yarn` or `npm install`.
 - In the mobile root direcotry run `json-server server.json -p 3333`.
 - Than run `react-native run-android`.
+
 _OBS:_ I wasn't able to set the iOS side of that project because I dont have a MacBook. But you can try it your own and open a pull request if you want.
 
 # :wrench: Running web locally
