@@ -5,6 +5,7 @@ Repository to learn more about redux. It is a little e-commerce of shoes that us
 ![](web-preview.gif)
 
 # :iphone: Mobile preview
+![](mobile-preview.gif)
 
 # :fire: Used technologies
 - ReactJS
